@@ -1,0 +1,12 @@
+compile_package:
+  script: "mvn package"
+  stage: build
+  artifacts:
+    name: '$CI_PROJECT_NAME Jar file'
+    paths:
+    - target/*.jar
+
+
+stages:
+  - build
+  - deploy
