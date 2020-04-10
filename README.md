@@ -1,6 +1,6 @@
 # HubCore
 
-Official List of Papa Brady's do's and don'ts:
+# HubCore - Chat formatting, name color, chat color, and private message plugin for Spigot and Bukkit - [![](https://gitlab.uniquedimensions.net/arcadelia/hubcore/-/tree/master)](https://gitlab.uniquedimensions.net/arcadelia/hubcore/pipelines/244)
 ```
     - DO'S:
         - Make sure PlaceholderAPI is installed AND has the Luckperms extensions installed and ACTIVATED
