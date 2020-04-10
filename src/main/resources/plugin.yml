@@ -1,0 +1,58 @@
+name: HubCore
+version: ${project.version}
+main: com.bradydawg.hubcore.HubCore
+api-version: 1.15
+softdepend: [Vault, PlaceholderAPI]
+authors: [Bradydawg]
+description: Hub Core Plugin
+commands:
+  chat:
+    description: Chat Plugin Commands
+  chat clear:
+    description: Clears the chat
+  chat reload:
+    description: Reloads the plugin
+  msg:
+    description: Private Message a player
+    aliases: [w, whisper, tell, message, pm, pn, m]
+  reply:
+    description: Reply to a private message
+    aliases: [r, rep, rply]
+  blockmsg:
+    description: Disable private messaging
+    aliases: [blocktell, blockwhisper, blockpm, bmsg]
+  socialspy:
+    description: Spy on private messages
+    aliases: [spy]
+  chatcolor:
+    usage: /<command>
+    aliases: [color, colorchat, colourchat, chatcolour, cc, namecolor, colorname, namecolour, colourname, nc]
+permissions:
+  hubcore.notifyupdate:
+    description: Notify if an update is needed
+  hubcore.clear:
+    description: Clears the chat
+  hubcore.reload:
+    description: Reloads the plugin
+  hubcore.chat.global:
+    description: Allows a user to talk in bungeecord chat
+  hubcore.bypassads:
+    description: Allows a user to bypass the ad blocker
+  hubcore.allowchat:
+    description: Allows a user to chat
+  hubcore.notifyad:
+    description: Notify if someone is blocked by the ad blocker
+  hubcore.chat.color:
+    description: Allows a user to chat with color
+  hubcore.antispam.bypass:
+    description: Allows a user to bypass the antispam
+  ChatColor.GUI:
+    description: Gives access to the /color command.
+  ChatColor.*:
+    description: Allows user to pick their chat color.
+  Chatcolor.r:
+    description: Allows a user to reset their chat color to the default color.
+  NameColor.*:
+    description: Allows a user to pick their name color.
+  NameColor.r:
+    description: Allows a user to reset their name color to the default color.
