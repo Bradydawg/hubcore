@@ -27,6 +27,12 @@ modify your displayname. **Only displayname**, plugins that modify your prefix
 or suffix will NOT cause errors. HubCore will also not work with any plugins 
 that use the commands listed below, such as private message plugins.
 
+## "What features are you planning for HubCore?"
+Currently we are planning to add a navigator compass which will allow a user
+to select which server/game they want to go to. We are also working on adding
+a GUI with an in-game store, a server updates section, a cosmetics menu, and a
+lobby effects menu with perks for users who purchase a rank on the website.
+
 ## HubCore Commands:
 ```
 commands:
