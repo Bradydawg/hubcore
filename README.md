@@ -2,8 +2,6 @@
 
 **HubCore Latest Version:** - [![version](https://img.shields.io/badge/version-v1.0-blue)](https://gitlab.uniquedimensions.net/arcadelia/hubcore/-/releases/v1.0)
 
-**Coverage Report:** - [![coverage report](https://gitlab.uniquedimensions.net/arcadelia/hubcore/badges/master/coverage.svg)](https://gitlab.uniquedimensions.net/arcadelia/hubcore/-/commits/master)
-
 ## HubCore: 
 Hub Core is a plugin for the core of a minecraft networks hub server. It
 currenty has some good base features. Currently, the HubCore plugin has a chat
@@ -27,10 +25,10 @@ installed for HubCore to work with LuckPerms prefixes.
 
 ## "Does HubCore not work with certain plugins?"
 Yes. HubCore will not work with any chat formatting plugins, or any plugins that
-modify your displayname. **Note** This only applies to plugins that modify a users displauname,
-plugins that modify your prefix or suffix will NOT cause errors. HubCore will 
-also not work with any plugins that use the commands listed below, such as 
-private message plugins.
+modify a users displayname. **Note** This only applies to plugins that modify a 
+users displayname, plugins that modify a users prefix or suffix will NOT cause 
+errors. HubCore will also not work with any plugins that use the commands listed
+below, such as private message plugins.
 
 ## "What features are you planning for HubCore?"
 Currently we are planning to add a navigator compass which will allow a user
