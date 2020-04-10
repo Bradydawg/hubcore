@@ -3,7 +3,7 @@ version: ${project.version}
 main: com.bradydawg.hubcore.HubCore
 api-version: 1.15
 softdepend: [Vault, PlaceholderAPI]
-authors: [Bradydawg]
+authors: [Bradydawg,hm1]
 description: Hub Core Plugin
 commands:
   chat:
@@ -47,12 +47,76 @@ permissions:
   hubcore.antispam.bypass:
     description: Allows a user to bypass the antispam
   ChatColor.GUI:
-    description: Gives access to the /color command.
+    description: Gives access to the /color command
   ChatColor.*:
-    description: Allows user to pick their chat color.
+    description: Allows user to use all chat colors
+  ChatColor.DARK_RED:
+    description: Allows user to use the dark red chat color
+  ChatColor.RED:
+    description: Allows user to use the red chat color
+  ChatColor.GOLD:
+    description: Allows user to use the gold chat color
+  ChatColor.YELLOW:
+    description: Allows user to use the yellow chat color
+  ChatColor.GREEN:
+    description: Allows user to use the green chat color
+  ChatColor.DARK_GREEN:
+    description: Allows user to use the dark green chat color
+  ChatColor.DARK_BLUE:
+    description: Allows user to use the dark blue chat color
+  ChatColor.BLUE:
+    description: Allows user to use the blue chat color
+  ChatColor.DARK_AQUA:
+    description: Allows user to use the dark aqua chat color
+  ChatColor.AQUA:
+    description: Allows user to use the aqua chat color
+  ChatColor.DARK_PURPLE:
+    description: Allows user to use the purple chat color
+  ChatColor.LIGHT_PURPLE:
+    description: Allows user to use the light purple chat color
+  ChatColor.WHITE:
+    description: Allows user to use the white chat color
+  ChatColor.GRAY:
+    description: Allows user to use the gray chat color
+  ChatColor.DARK_GRAY:
+    description: Allows user to use the dark gray chat color
+  ChatColor.BLACK:
+    description: Allows user to use the black chat color
   Chatcolor.r:
     description: Allows a user to reset their chat color to the default color.
   NameColor.*:
-    description: Allows a user to pick their name color.
+    description: Allows a user to use any name color
+  NameColor.DARK_RED:
+    description: Allows user to use the dark red name color
+  NameColor.RED:
+    description: Allows user to use the red name color
+  NameColor.GOLD:
+    description: Allows user to use the gold name color
+  NameColor.YELLOW:
+    description: Allows user to use the yellow name color
+  NameColor.GREEN:
+    description: Allows user to use the green name color
+  NameColor.DARK_GREEN:
+    description: Allows user to use the dark green name color
+  NameColor.DARK_BLUE:
+    description: Allows user to use the dark blue name color
+  NameColor.BLUE:
+    description: Allows user to use the blue name color
+  NameColor.DARK_AQUA:
+    description: Allows user to use the dark aqua name color
+  NameColor.AQUA:
+    description: Allows user to use the aqua name color
+  NameColor.DARK_PURPLE:
+    description: Allows user to use the purple name color
+  NameColor.LIGHT_PURPLE:
+    description: Allows user to use the light purple name color
+  NameColor.WHITE:
+    description: Allows user to use the white name color
+  NameColor.GRAY:
+    description: Allows user to use the gray name color
+  NameColor.DARK_GRAY:
+    description: Allows user to use the dark gray name color
+  NameColor.BLACK:
+    description: Allows user to use the black name color
   NameColor.r:
     description: Allows a user to reset their name color to the default color.

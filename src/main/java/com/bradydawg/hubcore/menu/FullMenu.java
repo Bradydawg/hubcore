@@ -20,11 +20,11 @@ public final class FullMenu extends Menu {
 
     private static final ChatColor[] colors = new ChatColor[] {
             ChatColor.DARK_RED, ChatColor.RED, ChatColor.GOLD, ChatColor.YELLOW, ChatColor.GREEN, ChatColor.DARK_GREEN, ChatColor.DARK_BLUE, ChatColor.BLUE, ChatColor.DARK_AQUA, ChatColor.AQUA,
-            ChatColor.DARK_PURPLE, ChatColor.LIGHT_PURPLE, ChatColor.WHITE, ChatColor.GRAY, ChatColor.DARK_GRAY, };
+            ChatColor.DARK_PURPLE, ChatColor.LIGHT_PURPLE, ChatColor.WHITE, ChatColor.GRAY, ChatColor.DARK_GRAY, ChatColor.BLACK };
 
     private static final Material[] materials = new Material[] {
             Material.REDSTONE_BLOCK, Material.RED_WOOL, Material.GOLD_BLOCK, Material.YELLOW_WOOL, Material.LIME_WOOL, Material.GREEN_WOOL, Material.LAPIS_BLOCK, Material.BLUE_WOOL, Material.CYAN_WOOL, Material.LIGHT_BLUE_WOOL,
-            Material.PURPLE_WOOL, Material.PINK_WOOL, Material.WHITE_WOOL, Material.LIGHT_GRAY_WOOL, Material.GRAY_WOOL, };
+            Material.PURPLE_WOOL, Material.PINK_WOOL, Material.WHITE_WOOL, Material.LIGHT_GRAY_WOOL, Material.GRAY_WOOL, Material.BLACK_WOOL};
 
     private MenuType selectedMenu;
 
@@ -62,10 +62,10 @@ public final class FullMenu extends Menu {
 
     public void buildColorMenu() {
         assert materials.length == colors.length;
-        IntStream.range(0, 16-17).forEach(i -> this.inv.setItem(i, new ItemStack(Material.AIR)));
+        IntStream.range(0, 17).forEach(i -> this.inv.setItem(i, new ItemStack(Material.AIR)));
         for (int i = 0; i < colors.length; i++)
             this.inv.setItem(i, makeItem(materials[i], colors[i] + nameToDisplayName(colors[i].name()), new String[0]));
-        this.inv.setItem(15, makeItem(Material.RED_WOOL, HubCore.toRainbow("Rainbow"), new String[0]));
+        this.inv.setItem(16, makeItem(Material.RED_WOOL, HubCore.toRainbow("Rainbow"), new String[0]));
     }
 
     private String nameToDisplayName(String name) {
