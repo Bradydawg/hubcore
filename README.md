@@ -1,6 +1,7 @@
 # HubCore
 
-# HubCore - Chat formatting, name color, chat color, and private message plugin for Spigot and Bukkit - [![](https://gitlab.uniquedimensions.net/arcadelia/hubcore/-/tree/master)](https://gitlab.uniquedimensions.net/arcadelia/hubcore/pipelines/244)
+[![Build Status](https://gitlab.uniquedimensions.net/arcadelia/hubcore/-/tree/master)](https://gitlab.uniquedimensions.net/arcadelia/hubcore/pipelines/244)
+# HubCore - Chat formatting, name color, chat color, and private message plugin for Spigot and Bukkit - 
 ```
     - DO'S:
         - Make sure PlaceholderAPI is installed AND has the Luckperms extensions installed and ACTIVATED
