@@ -1,5 +1,7 @@
 # HubCore - Core server plugin for Spigot and Bukkit - [![pipeline status](https://gitlab.uniquedimensions.net/arcadelia/hubcore/badges/master/pipeline.svg)](https://gitlab.uniquedimensions.net/arcadelia/hubcore/-/commits/master)
 
+**HubCore Latest Version:** - https://img.shields.io/badge/version-v1.0-blue
+
 ## HubCore: 
 Hub Core is a plugin for the core of a minecraft networks hub server. It
 currenty has some good base features. Currently, the HubCore plugin has a chat
