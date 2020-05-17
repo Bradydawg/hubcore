@@ -1,6 +1,6 @@
 # HubCore - Core server plugin for Spigot and Bukkit - [![pipeline status](https://gitlab.uniquedimensions.net/arcadelia/hubcore/badges/master/pipeline.svg)](https://gitlab.uniquedimensions.net/arcadelia/hubcore/-/commits/master)
 
-**HubCore Latest Version:** - [![version](https://img.shields.io/badge/version-v1.0-blue)](https://gitlab.uniquedimensions.net/arcadelia/hubcore/-/releases/v1.0)
+**HubCore Latest Version:** - [![version](https://img.shields.io/badge/version-v2.0-blue)](https://gitlab.uniquedimensions.net/arcadelia/hubcore/-/releases/v2.0)
 
 ## HubCore: 
 Hub Core is a plugin for the core of a minecraft networks hub server. It
@@ -31,7 +31,9 @@ Yes. HubCore will not work with any chat formatting plugins, or any plugins that
 modify a users displayname. **Note** This only applies to plugins that modify a 
 users displayname, plugins that modify a users prefix or suffix will NOT cause 
 errors. HubCore will also not work with any plugins that use the commands listed
-below, such as private message plugins.
+below, such as private message plugins. Hub Core will also not work with any 
+plugins that modify or place anything in the users hotbar, as it relies on 
+the hotbar to add the navigator compass, and other features.
 
 ## "What features are you planning for HubCore?"
 Nothing at the moment! Stay tuned.
