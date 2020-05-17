@@ -6,11 +6,14 @@
 Hub Core is a plugin for the core of a minecraft networks hub server. It
 currenty has some good base features. Currently, the HubCore plugin has a chat
 formatting feature which works with most permissions plugins to display a users
-prefix, along with whatever their displayname is. It also has a name color and
+prefix, along with whatever their displayname is. It has a name color and
 chat color feature, which allows a user to change their name color or chat color
-(granted that they have the correct permissions). Finally, the HubCore plugin
-allows users to private message eachother with the /msg command, and allows 
-administrators to monitor these conversations with the /socialspy command.
+(granted that they have the correct permissions). It has a complete Hub Navigator,
+which comes with a navigation compass with a server selector GUI, a shop button,
+an equippable elytra (with unlimited fireworks and a boost), a lobby effects menu,
+and a lobby selector GUI. Finally, the HubCore plugin allows users to private 
+message eachother with the /msg command, and allows administrators to monitor 
+these conversations with the /socialspy command.
 
 ## HubCore Dependencies:
 HubCore was built with weight in mind, therefore, it only relies on two plugins:
