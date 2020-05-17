@@ -58,6 +58,12 @@ commands:
     usage: /<command>
     aliases: [color, colorchat, colourchat, chatcolour, cc, namecolor, colorname,
     namecolour, colourname, nc]
+  navigator:
+    usage: /<command>
+    description: Opens the navigation GUI.
+  spawn:
+    usage: /<command>
+    description: Teleports you to the spawn.
 ```
 
 ## HubCore Permissions
@@ -81,6 +87,8 @@ permissions:
     description: Allows a user to chat with color
   hubcore.antispam.bypass:
     description: Allows a user to bypass the antispam
+  hubcore.elytra:
+    description: Allows the use of the equipable elytra
   ChatColor.GUI:
     description: Gives access to the /color command
   ChatColor.*:
