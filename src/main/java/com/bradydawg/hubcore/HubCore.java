@@ -241,54 +241,6 @@ public class HubCore extends JavaPlugin {
 
         ChannelHandler.load();
 
-        path = getInstance().getDataFolder().getAbsolutePath() + (getInstance().getDataFolder().getAbsolutePath().endsWith("/") ? "" : "/") + "userData.json";
-
-        registerCommands();
-        registerListeners();
-        saveDefaultConfig();
-
-        getConfig().addDefault("cmd.msg.format.meTo","&6[&bMe &6→ &a%displayname%&6] &f%message%");
-        getConfig().addDefault("cmd.msg.format.toMe","&6[&a%displayname% &6→ &bMe&6] &f%message%");
-        getConfig().addDefault("cmd.msg.mayNotSendLinks","&cYou are not allowed to send links via private message.");
-        getConfig().addDefault("cmd.msg.usage","&c/%label% <User> <Message>");
-
-        getConfig().addDefault("cmd.reply.usage","&c/%label% <Message>");
-        getConfig().addDefault("cmd.reply.noMessageSent","&cYou have to send a message before you can use /reply");
-
-        getConfig().addDefault("cmd.blockmsg.activated","&cYou can no longer receive private messages!");
-        getConfig().addDefault("cmd.blockmsg.deactivated","&aYou can now receive private messages again!");
-
-        getConfig().addDefault("cmd.socialspy.on","&aSocial-Spy is now active!");
-        getConfig().addDefault("cmd.socialspy.off","&cSocial-Spy is no longer active!");
-        getConfig().addDefault("cmd.socialspy.msg","&6[&b%player1% &6→ &a%player2%&6] &f%message%");
-
-        getConfig().addDefault("player.notOnline","&cPlayer '%player%' is offline!");
-        getConfig().addDefault("player.noPermission","&cYou do not have permission!");
-        getConfig().addDefault("player.blockingMessages","&c%displayname% is blocking private messages!");
-
-        try {
-            File file = new File(path);
-            if(file.exists()){
-                USER_STORAGE = GSON.fromJson(new JsonReader(new FileReader(path)),new TypeToken<ArrayList<MessengerUser>>(){}.getType());
-            } else {
-                file.createNewFile();
-            }
-        } catch(Exception e){
-            System.out.println("An error occurred trying to read userData.json, defaulting to empty storage.");
-        }
-
-        if(USER_STORAGE == null) USER_STORAGE = new ArrayList<MessengerUser>();
-
-        config = getConfig();
-        saveDefaultConfig();
-        dataPath = getDataFolder().getPath() + "/data";
-        dataPath = getDataPath();
-        Bukkit.getOnlinePlayers().forEach(player -> new HMPlayer(player.getUniqueId()));
-        Bukkit.getPluginManager().registerEvents(new PlayerChatListener(), (Plugin)this);
-        Bukkit.getPluginManager().registerEvents((Listener)new Click_Listeners(), (Plugin)this);
-        getCommand("chatcolor").setExecutor(new ChatColorCommand());
-        
-
         instance = this;
 
         //Configuration Value Check
@@ -389,6 +341,55 @@ public class HubCore extends JavaPlugin {
         getCommand("navigator").setExecutor(new NavigatorCommand());
         getCommand("spawn").setExecutor(new SpawnCommand());
 
+        INSTANCE = this;
+
+        path = getInstance().getDataFolder().getAbsolutePath() + (getInstance().getDataFolder().getAbsolutePath().endsWith("/") ? "" : "/") + "userData.json";
+
+        registerCommands();
+        registerListeners();
+        saveDefaultConfig();
+
+        getConfig().addDefault("cmd.msg.format.meTo","&6[&bMe &6→ &a%displayname%&6] &f%message%");
+        getConfig().addDefault("cmd.msg.format.toMe","&6[&a%displayname% &6→ &bMe&6] &f%message%");
+        getConfig().addDefault("cmd.msg.mayNotSendLinks","&cYou are not allowed to send links via private message.");
+        getConfig().addDefault("cmd.msg.usage","&c/%label% <User> <Message>");
+
+        getConfig().addDefault("cmd.reply.usage","&c/%label% <Message>");
+        getConfig().addDefault("cmd.reply.noMessageSent","&cYou have to send a message before you can use /reply");
+
+        getConfig().addDefault("cmd.blockmsg.activated","&cYou can no longer receive private messages!");
+        getConfig().addDefault("cmd.blockmsg.deactivated","&aYou can now receive private messages again!");
+
+        getConfig().addDefault("cmd.socialspy.on","&aSocial-Spy is now active!");
+        getConfig().addDefault("cmd.socialspy.off","&cSocial-Spy is no longer active!");
+        getConfig().addDefault("cmd.socialspy.msg","&6[&b%player1% &6→ &a%player2%&6] &f%message%");
+
+        getConfig().addDefault("player.notOnline","&cPlayer '%player%' is offline!");
+        getConfig().addDefault("player.noPermission","&cYou do not have permission!");
+        getConfig().addDefault("player.blockingMessages","&c%displayname% is blocking private messages!");
+
+        try {
+            File file = new File(path);
+            if(file.exists()){
+                USER_STORAGE = GSON.fromJson(new JsonReader(new FileReader(path)),new TypeToken<ArrayList<MessengerUser>>(){}.getType());
+            } else {
+                file.createNewFile();
+            }
+        } catch(Exception e){
+            System.out.println("An error occurred trying to read userData.json, defaulting to empty storage.");
+        }
+
+        if(USER_STORAGE == null) USER_STORAGE = new ArrayList<MessengerUser>();
+
+        config = getConfig();
+        saveDefaultConfig();
+        dataPath = getDataFolder().getPath() + "/data";
+        dataPath = getDataPath();
+        Bukkit.getOnlinePlayers().forEach(player -> new HMPlayer(player.getUniqueId()));
+        Bukkit.getPluginManager().registerEvents(new PlayerChatListener(), (Plugin)this);
+        Bukkit.getPluginManager().registerEvents((Listener)new Click_Listeners(), (Plugin)this);
+        getCommand("chatcolor").setExecutor(new ChatColorCommand());
+
         getLogger().log(Level.INFO, "Arcadelia Hub Core is done enabling!");
 
     }
@@ -397,7 +398,6 @@ public class HubCore extends JavaPlugin {
     public void onDisable() {
         ChatLogger.close();
         getServer().getScheduler().cancelTasks(this);
-        getLogger().info("is now disabled!");
         saveData();
         Menu.onDisable();
     }
