@@ -60,9 +60,13 @@ commands:
     description: Spy on private messages
     aliases: [spy]
   chatcolor:
+    description: Opens the color GUI
     usage: /<command>
-    aliases: [color, colorchat, colourchat, chatcolour, cc, namecolor, colorname,
-    namecolour, colourname, nc]
+    aliases: [color, colorchat, colourchat, chatcolour, cc]
+  namecolor:
+    description: Opens the color GUI
+    usage: /<command>
+    aliases: [namecolor, colorname, namecolour, colourname, nc]
   navigator:
     usage: /<command>
     description: Opens the navigation GUI.
