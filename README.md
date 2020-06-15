@@ -30,7 +30,7 @@ installed for HubCore to work with LuckPerms prefixes.
 Yes. HubCore will not work with any chat formatting plugins, or any plugins that
 modify a users displayname. **Note:** This only applies to plugins that modify a 
 users displayname, plugins that modify a users prefix or suffix will NOT cause 
-errors. HubCore will also not work with any plugins that use the commands listed
+errors. HubCore will not work with any plugins that use the commands listed
 below, such as private message plugins. Hub Core will also not work with any 
 plugins that modify or place anything in the users hotbar, as it relies on 
 the hotbar to add the navigator compass, and other features.
