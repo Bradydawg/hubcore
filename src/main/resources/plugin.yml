@@ -4,7 +4,7 @@ main: com.bradydawg.hubcore.HubCore
 api-version: 1.16
 softdepend: [Vault, PlaceholderAPI]
 authors: [Bradydawg]
-description: Hub Core Plugin
+description: HubCore Plugin
 commands:
   chat:
     description: Chat Plugin Commands
